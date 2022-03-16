@@ -1,16 +1,20 @@
-<html lang="es">
+<!DOCTYPE html>
+<html lang="fr">
+
 <head>
 	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="modal.css">
+	<title>OSS 117</title>
 </head>
-<body>
 
-	<div
-		class="modal--fade CookiesModal"
-		id="modal"
-		aria-hidden="true"
-	>
+<body>
+	<!-- Modal Cookie -->
+	<div class="modal--fade CookiesModal" id="modal" aria-hidden="true">
 		<div class="modal-inner">
 			<div class="CookiesModal-title" id="modal-label">Gestion des cookies</div>
 			<div class="modal-content">
@@ -23,71 +27,82 @@
 			</div>
 		</div>
 
-		<a
-			href="#!"
-			class="modal-close"
-			title="Fermer la boîte de dialogue"
-			data-close="Fermer"
-			data-dismiss="modal"
-		>
+		<a href="#!" class="modal-close" title="Fermer la boîte de dialogue" data-close="Fermer" data-dismiss="modal">
 			?
 		</a>
 	</div>
 
 	<div class="Site">
 
-		<a href="#recherche">Aller à la recherche</a>
-		<a href="#contenu">Aller au contenu</a>
-		<a href="#pied">Aller au pied de page</a>
 
-		<div class="Header">
-			<h3 class="Header-title">
-				<a href="index.html">
+
+		<header class="Header d-flex flex-wrap">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<div class="container-fluid">
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+						data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+						aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse justify-content-center mx-4" id="navbarNavDropdown">
+						<ul class="navbar-nav">
+							<li class="nav-item col-3 mx-1">
+								<a class="nav-link" href="#recherche">Aller à la recherche</a>
+							</li>
+							<li class="nav-item col-3 mx-1">
+								<a class="nav-link" href="#contenu">Aller au contenu</a>
+							</li>
+							<li class="nav-item col-3 mx-1">
+								<a class="nav-link" href="#pied">Aller au pied de page</a>
+							</li>
+							<li class="nav-item col-3 mx-1">
+								<form action="#" class="Search">
+									<input type="text" placeholder="Rechercher">
+									<button>
+										<svg viewBox="0 0 490 490" width="16" height="16">
+											<path fill="none" stroke="#000" stroke-width="36" stroke-linecap="round"
+												d="m280,278a153,153 0 1,0-2,2l170,170m-91-117 110,110-26,26-110-110" />
+										</svg>
+									</button>
+								</form>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<h3 class="Header-title col-12 d-flex justify-content-around">
+				<a class="" href="index.html">
+					<img alt="" src="images/oss117.png" width="300" class="Header-logo">
+				</a>
+				<a class="" href="index.html">
 					<img alt="Accueil - OSS 117" src="images/oss117.png" width="300" class="Header-logo">
 				</a>
 			</h3>
+		</header>
 
-			<form action="#" class="Search">
-				<input type="text" placeholder="Rechercher">
-				<button>
-					<svg
-						viewBox="0 0 490 490"
-						width="16"
-						height="16"
-					>
-						<path
-							fill="none"
-							stroke="#000"
-							stroke-width="36"
-							stroke-linecap="round"
-							d="m280,278a153,153 0 1,0-2,2l170,170m-91-117 110,110-26,26-110-110"
-						/>
-					</svg>
-				</button>
-			</form>
-		</div>
-
-		<ul class="Menu">
-			<li>
-				<a href="#intro">Introduction</a>
-			</li>
-			<li>
-				<a href="#synopsis">Synopsis</a>
-			</li>
-			<li>
-				<a href="#distribution">Distribution</a>
-			</li>
-			<li>
-				<a href="#distinctions">Distinctions</a>
-			</li>
-			<li>
-				<a href="#livredor">Livre d'or</a>
-			</li>
-		</ul>
+		<nav>
+			<ul class="Menu">
+				<li>
+					<a href="#intro">Introduction</a>
+				</li>
+				<li>
+					<a href="#synopsis">Synopsis</a>
+				</li>
+				<li>
+					<a href="#distribution">Distribution</a>
+				</li>
+				<li>
+					<a href="#distinctions">Distinctions</a>
+				</li>
+				<li>
+					<a href="#livredor">Livre d'or</a>
+				</li>
+			</ul>
+		</nav>
 
 
 		<div id="contenu">
-			<h3 id="intro">Introduction</h3>
+			<h3 id="intro">Introductions</h3>
 
 			<p>OSS 117 : Le Caire, nid d'espions est une comédie d'espionnage française réalisé par Michel Hazanavicius,
 				sorti en 2006. Il possède deux suites : <img alt="OSS 117 rio ne répond plus" src="images/rio.png"
@@ -95,13 +110,38 @@
 
 			<h3 id="synopsis">Synopsis</h3>
 
-			<p>En 1945, à la fin de la Seconde Guerre mondiale, Hubert Bonisseur de la Bath et Jack Jefferson, deux agents des Forces françaises libres, effectuent une mission pour les Alliés où ils parviennent à détourner un avion allemand et à dérober les plans du V2, l'arme absolue de l'Allemagne nazie.</p>
+			<p>En 1945, à la fin de la Seconde Guerre mondiale, Hubert Bonisseur de la Bath et Jack Jefferson, deux
+				agents des Forces françaises libres, effectuent une mission pour les Alliés où ils parviennent à
+				détourner un avion allemand et à dérober les plans du V2, l'arme absolue de l'Allemagne nazie.</p>
 
-			<p>Dix ans plus tard, en 1955, la France vit sous la Quatrième République présidée par René Coty et les choses vont très mal au Caire, dans les années qui suivent le coup d'État du général Nasser. La France a fort à faire avec les crises au Proche-Orient, dans un monde en pleine Guerre froide. À la suite de la mort de Jack Jefferson, l'agent OSS 283, Hubert Bonisseur de la Bath, l'agent OSS 117 du SDECE, est envoyé sur le terrain par son supérieur Armand Lesignac pour enquêter sur cette disparition mystérieuse et « sécuriser le Proche-Orient ». Sa couverture : diriger la SCEP (Société Cairote d'Élevage de Poulets) où il remplace son ami Jack. La ville grouille d'espions dissimulés derrière diverses sociétés d'élevage d'animaux comme des Français, des Soviétiques, un espion belge et même un groupe de nazis.</p>
+			<p>Dix ans plus tard, en 1955, la France vit sous la Quatrième République présidée par René Coty et les
+				choses vont très mal au Caire, dans les années qui suivent le coup d'État du général Nasser. La France a
+				fort à faire avec les crises au Proche-Orient, dans un monde en pleine Guerre froide. À la suite de la
+				mort de Jack Jefferson, l'agent OSS 283, Hubert Bonisseur de la Bath, l'agent OSS 117 du SDECE, est
+				envoyé sur le terrain par son supérieur Armand Lesignac pour enquêter sur cette disparition mystérieuse
+				et « sécuriser le Proche-Orient ». Sa couverture : diriger la SCEP (Société Cairote d'Élevage de
+				Poulets) où il remplace son ami Jack. La ville grouille d'espions dissimulés derrière diverses sociétés
+				d'élevage d'animaux comme des Français, des Soviétiques, un espion belge et même un groupe de nazis.</p>
 
-			<p>De plus, les Égyptiens eux-mêmes sont agités : le roi déchu Farouk veut reconquérir son trône par l'entremise de sa nièce, la séduisante princesse Al Tarouk, et un groupe de religieux fanatiques nommé les « Aigles de Khéops » qui s'apprête à déclencher une guerre sainte. Toutes ces affaires semblent enfin catalysées autour de la mystérieuse disparition d'un navire soviétique chargé d'armes, le Kapov.</p>
+			<p>De plus, les Égyptiens eux-mêmes sont agités : le roi déchu Farouk veut reconquérir son trône par
+				l'entremise de sa nièce, la séduisante princesse Al Tarouk, et un groupe de religieux fanatiques nommé
+				les « Aigles de Khéops » qui s'apprête à déclencher une guerre sainte. Toutes ces affaires semblent
+				enfin catalysées autour de la mystérieuse disparition d'un navire soviétique chargé d'armes, le Kapov.
+			</p>
 
-			<p>Juste après une réunion avec différents protagonistes et lors d'une réception à l'ambassade britannique, une attaque est perpétrée. OSS 117 poursuit l'attaquant mais le perd dans la vieille ville. En rentrant à l'hôtel, OSS 117 est dérangé dans son sommeil par l'appel à la prière du muezzin. Il s'en va ainsi le faire taire. Ce qui déclenche la colère des « Aigles de Khéops » qui le savent responsable de cet acte. Pour se venger, ils le jettent dans le canal de Suez, les mains et les pieds liés où Hubert Bonisseur de la Bath échappe de justesse à la mort. Dans le désert, lui et Larmina sont finalement capturés par des archéologues nazis mais ils arrivent à s'en échapper en les emprisonnant. Larmina organise alors une réunion discrète avec l'imam des « Aigles de Khéops ». Lors de celle-ci, dans une boîte de nuit, OSS 117 entonne un chant à l'Oud pour détourner l'attention. Larmina apprend de l'imam qu'il a rendez-vous le soir-même dans le port où l'imam négocie avec Jack, qui n'est pas mort et qui fait de la contrebande d'armes. L'imam est jeté dans l'eau du port, Jack se fait abattre par la princesse Al Tarouk qui est abattue à son tour par accident (par OSS 117) alors qu'elle se battait avec Larmina. OSS 117 fait exploser le stock d'armes entreposé sur le Kapov tout en embrassant Larmina.</p>
+			<p>Juste après une réunion avec différents protagonistes et lors d'une réception à l'ambassade britannique,
+				une attaque est perpétrée. OSS 117 poursuit l'attaquant mais le perd dans la vieille ville. En rentrant
+				à l'hôtel, OSS 117 est dérangé dans son sommeil par l'appel à la prière du muezzin. Il s'en va ainsi le
+				faire taire. Ce qui déclenche la colère des « Aigles de Khéops » qui le savent responsable de cet acte.
+				Pour se venger, ils le jettent dans le canal de Suez, les mains et les pieds liés où Hubert Bonisseur de
+				la Bath échappe de justesse à la mort. Dans le désert, lui et Larmina sont finalement capturés par des
+				archéologues nazis mais ils arrivent à s'en échapper en les emprisonnant. Larmina organise alors une
+				réunion discrète avec l'imam des « Aigles de Khéops ». Lors de celle-ci, dans une boîte de nuit, OSS 117
+				entonne un chant à l'Oud pour détourner l'attention. Larmina apprend de l'imam qu'il a rendez-vous le
+				soir-même dans le port où l'imam négocie avec Jack, qui n'est pas mort et qui fait de la contrebande
+				d'armes. L'imam est jeté dans l'eau du port, Jack se fait abattre par la princesse Al Tarouk qui est
+				abattue à son tour par accident (par OSS 117) alors qu'elle se battait avec Larmina. OSS 117 fait
+				exploser le stock d'armes entreposé sur le Kapov tout en embrassant Larmina.</p>
 
 			<h3 id="distribution">Distribution</h3>
 			<div class="Distribution">
@@ -131,31 +171,40 @@
 							Hubert Bonisseur de La Bath / OSS 117
 						</li>
 						<li>
-							<a href="https://fr.wikipedia.org/wiki/B%C3%A9r%C3%A9nice_Bejo">Bérénice Bejo</a>&nbsp;: Larmina El Akmar Betouche
+							<a href="https://fr.wikipedia.org/wiki/B%C3%A9r%C3%A9nice_Bejo">Bérénice Bejo</a>&nbsp;:
+							Larmina El Akmar Betouche
 						</li>
 						<li>
-							<a href="https://fr.wikipedia.org/wiki/Aure_Atika">Aure Atika</a>&nbsp;: la princesse Al Tarouk
+							<a href="https://fr.wikipedia.org/wiki/Aure_Atika">Aure Atika</a>&nbsp;: la princesse Al
+							Tarouk
 						</li>
 						<li>
-							<a href="https://fr.wikipedia.org/wiki/Richard_Sammel">Richard Sammel</a>&nbsp;: le colonel Gerhard Moeller
+							<a href="https://fr.wikipedia.org/wiki/Richard_Sammel">Richard Sammel</a>&nbsp;: le colonel
+							Gerhard Moeller
 						</li>
 						<li>
-							<a href="https://fr.wikipedia.org/wiki/Philippe_Lefebvre_(acteur)">Philippe Lefebvre</a>&nbsp;: Jack Jefferson / OSS 283
+							<a href="https://fr.wikipedia.org/wiki/Philippe_Lefebvre_(acteur)">Philippe
+								Lefebvre</a>&nbsp;: Jack Jefferson / OSS 283
 						</li>
 						<li>
-							<a href="https://fr.wikipedia.org/wiki/Constantin_Alexandrov">Constantin Alexandrov</a>&nbsp;: Ievgueni Setine
+							<a href="https://fr.wikipedia.org/wiki/Constantin_Alexandrov">Constantin
+								Alexandrov</a>&nbsp;: Ievgueni Setine
 						</li>
 						<li>
-							<a href="https://fr.wikipedia.org/wiki/Sa%C3%AFd_Amadis">Saïd Amadis</a>&nbsp;: le ministre égyptien
+							<a href="https://fr.wikipedia.org/wiki/Sa%C3%AFd_Amadis">Saïd Amadis</a>&nbsp;: le ministre
+							égyptien
 						</li>
 						<li>
-							<a href="https://fr.wikipedia.org/wiki/Laurent_Bateau">Laurent Bateau</a>&nbsp;: Nigel Gardenborough
+							<a href="https://fr.wikipedia.org/wiki/Laurent_Bateau">Laurent Bateau</a>&nbsp;: Nigel
+							Gardenborough
 						</li>
 						<li>
-							<a href="https://fr.wikipedia.org/wiki/Claude_Brosset">Claude Brosset</a>&nbsp;: Armand Lesignac, le patron du SDECE
+							<a href="https://fr.wikipedia.org/wiki/Claude_Brosset">Claude Brosset</a>&nbsp;: Armand
+							Lesignac, le patron du SDECE
 						</li>
 						<li>
-							<a href="https://fr.wikipedia.org/wiki/Fran%C3%A7ois_Damiens">François Damiens</a>&nbsp;: Raymond Pelletier
+							<a href="https://fr.wikipedia.org/wiki/Fran%C3%A7ois_Damiens">François Damiens</a>&nbsp;:
+							Raymond Pelletier
 						</li>
 						<li>Youssef Hamid&nbsp;: l'imam des Aigles de Khéops </li>
 						<li>
@@ -166,18 +215,21 @@
 						</li>
 						<li>Abdallah Moundy&nbsp;: Slimane</li>
 						<li>
-							<a href="https://fr.wikipedia.org/wiki/%C3%89ric_Prat">Éric Prat</a>&nbsp;: Gilbert Plantieux
+							<a href="https://fr.wikipedia.org/wiki/%C3%89ric_Prat">Éric Prat</a>&nbsp;: Gilbert
+							Plantieux
 						</li>
 						<li>Alain Khouani&nbsp;: le réceptionniste de l'hôtel du Caire</li>
 						<li>Hafid F. Benamar&nbsp;: l'ami du fouetteur</li>
 						<li>Jean-Marie Paris&nbsp;: Khalid</li>
 						<li>
-							<a href="https://fr.wikipedia.org/wiki/Michael_Hofland">Michael Hofland</a>&nbsp;: le colonel Herman von Umsprung
+							<a href="https://fr.wikipedia.org/wiki/Michael_Hofland">Michael Hofland</a>&nbsp;: le
+							colonel Herman von Umsprung
 						</li>
 						<li>Mouloud Ikhaddaliene&nbsp;: le sbire de la princesse</li>
 						<li>Diego Dieng&nbsp;: le garçon d'étage</li>
 						<li>
-							<a href="https://fr.wikipedia.org/wiki/Jean-Fran%C3%A7ois_Halin">Jean-François Halin</a>&nbsp;: Rubecht <small> (pré-générique) </small>
+							<a href="https://fr.wikipedia.org/wiki/Jean-Fran%C3%A7ois_Halin">Jean-François
+								Halin</a>&nbsp;: Rubecht <small> (pré-générique) </small>
 						</li>
 						<li>Johannes Oliver Hamm&nbsp;: un officier SS
 						</li>
@@ -185,13 +237,16 @@
 						<li>Hassan Chabaki&nbsp;: le passant serviable</li>
 						<li>Hedi Naili&nbsp;: le muezzin</li>
 						<li>
-							<a href="https://fr.wikipedia.org/wiki/Marc_Bodnar" >Marc Bodnar</a>&nbsp;: le patron du bistrot
+							<a href="https://fr.wikipedia.org/wiki/Marc_Bodnar">Marc Bodnar</a>&nbsp;: le patron du
+							bistrot
 						</li>
 						<li>
-							<a href="https://fr.wikipedia.org/wiki/Bernard_Nissille" >Bernard Nissille</a>&nbsp;: l'homme à l'aéroport
+							<a href="https://fr.wikipedia.org/wiki/Bernard_Nissille">Bernard Nissille</a>&nbsp;: l'homme
+							à l'aéroport
 						</li>
 						<li>
-							<a href="https://fr.wikipedia.org/wiki/Ludovic_Bource" >Ludovic Bource</a>&nbsp;: le chef d'orchestre (non crédité)
+							<a href="https://fr.wikipedia.org/wiki/Ludovic_Bource">Ludovic Bource</a>&nbsp;: le chef
+							d'orchestre (non crédité)
 						</li>
 					</ul>
 				</div>
@@ -200,7 +255,8 @@
 
 			<h3 id="distinctions">Distinctions</h3>
 
-			<p>Note : les cases surlignées en vertes représentent les récompenses. Les autres représentent des nominations.</p>
+			<p>Note : les cases surlignées en vertes représentent les récompenses. Les autres représentent des
+				nominations.</p>
 			<table class="Distinctions">
 				<tr>
 					<td>Date</td>
@@ -269,7 +325,9 @@
 
 			<div class="RetoursModal">
 				<h3>Retours sur la boîte de dialogue de gestion de cookies</h3>
-				<p>En vous basant sur le <a href="https://www.w3.org/TR/wai-aria-practices-1.1/#dialog_modal">design pattern ARIA "Dialog (Modal")</a>, notez ici les problèmes d'accessibilité relevés sur la boîte de dialogue de cookies.</p>
+				<p>En vous basant sur le <a href="https://www.w3.org/TR/wai-aria-practices-1.1/#dialog_modal">design
+						pattern ARIA "Dialog (Modal")</a>, notez ici les problèmes d'accessibilité relevés sur la boîte
+					de dialogue de cookies.</p>
 			</div>
 		</div>
 
@@ -277,13 +335,15 @@
 			<div class="Footer-columns">
 				<div>
 					<h5>Bibliographie</h5>
-					Émilie de la Hosseraye, Jean-François Halin et Pierre Duclos, <em>OSS 117 Le Caire, nid d'espion&nbsp;: le roman-photo du film</em>, SW-Télémaque, 2006, ISBN 275330033X
+					Émilie de la Hosseraye, Jean-François Halin et Pierre Duclos, <em>OSS 117 Le Caire, nid
+						d'espion&nbsp;: le roman-photo du film</em>, SW-Télémaque, 2006, ISBN 275330033X
 				</div>
 				<div>
 					<h5>Articles wikipédia</h5>
 					<ol>
 						<li>
-							<a href="https://fr.wikipedia.org/wiki/Hubert_Bonisseur_de_La_Bath">Hubert Bonisseur de La Bath</a>
+							<a href="https://fr.wikipedia.org/wiki/Hubert_Bonisseur_de_La_Bath">Hubert Bonisseur de La
+								Bath</a>
 						</li>
 						<li>
 							<a href="https://fr.wikipedia.org/wiki/Jean_Dujardin">Jean Dujardin</a>
@@ -295,7 +355,8 @@
 							<a href="https://fr.wikipedia.org/wiki/OSS_117"><em>OSS 117</em> (série littéraire)</a>
 						</li>
 						<li>
-							<em><a href="https://fr.wikipedia.org/wiki/OSS_117_:_Rio_ne_r%C3%A9pond_plus">OSS 117 : Rio ne répond plus</a></em>, suite du film
+							<em><a href="https://fr.wikipedia.org/wiki/OSS_117_:_Rio_ne_r%C3%A9pond_plus">OSS 117 : Rio
+									ne répond plus</a></em>, suite du film
 						</li>
 					</ol>
 				</div>
@@ -306,27 +367,34 @@
 							<a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=61099.html">Allociné</a>
 						</div>
 						<div>
-							<a href="https://www.cnc.fr/professionnels/visas-et-classification/113138">Centre national du cinéma et de l'image animée</a>
+							<a href="https://www.cnc.fr/professionnels/visas-et-classification/113138">Centre national
+								du cinéma et de l'image animée</a>
 						</div>
 						<div>
 							<a href="https://www.unifrance.org/film/26385">Unifrance</a>
-						<div>
-						</div>
+							<div>
+							</div>
 							<a href="https://www.imdb.com/&amp;id=tt0464913">Internet Movie Database</a>
 						</div>
 					</div>
 				</div>
 			</div>
-			<p class="Footer-from">Contenu tiré de <a href="https://fr.wikipedia.org/wiki/OSS_117_:_Le_Caire,_nid_d%27espions">Wikipédia</a></p>
+			<p class="Footer-from">Contenu tiré de <a
+					href="https://fr.wikipedia.org/wiki/OSS_117_:_Le_Caire,_nid_d%27espions">Wikipédia</a></p>
 		</footer>
 	</div>
 
 	<div class="Cookies">
-		<p>On n'utilise pas de cookies, mais pour faire genre, on affiche quand même une bannière qui vous demande de les accepter.</p>
+		<p>On n'utilise pas de cookies, mais pour faire genre, on affiche quand même une bannière qui vous demande de
+			les accepter.</p>
 
 		<a href="#modal" class="Button">Gérer les cookies</a>
 	</div>
-
+	<!-- scripts -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+	</script>
 	<script src="script.js"></script>
 </body>
+
 </html>
