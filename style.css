@@ -193,6 +193,13 @@ h5 {
 	background: green;
 }
 
+.GoldenBook-toggle{
+	padding: 0.5rem 1rem;
+	background-color: #f8ab8a;
+	border-radius: 2rem;
+	border: none;
+}
+
 .GoldenBook-form {
 	margin: 30px;
 }
