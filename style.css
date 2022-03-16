@@ -4,9 +4,10 @@
 
 body {
 	margin: 0;
-	background: #f8ab8a;
+	background: #222;
 	font-family: sans-serif;
 	font-size: 16px;
+	color : white;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -50,8 +51,8 @@ h5 {
 }
 
 .Button {
-	background: orange;
-	color: white;
+	background: purple;
+	color: black;
 	text-decoration: none;
 	display: inline-block;
 	padding: 6px 12px;
@@ -61,9 +62,9 @@ h5 {
 .Site {
 	margin: auto;
 	max-width: 900px;
-	background: white;
-	box-shadow: 0 10px 10px #be5d17;
-	border: 3px solid orange;
+	background: rgb(56, 54, 54);
+	box-shadow: 0 10px 10px #a207c9;
+	border: 3px solid purple;
 	border-top: 0;
 	border-bottom: 0;
 	padding: 15px;
@@ -76,10 +77,10 @@ h5 {
 	bottom: 10px;
 	right: 10px;
 	width: 300px;
-	background: white;
+	background: rgb(66, 63, 63);
 	padding: 15px;
 	border: 1px solid rgba(153, 108, 66, 0.698);
-	box-shadow: 0 0 5px rgba(153, 108, 66, 0.698);
+	box-shadow: 0 0 5px rgba(190, 7, 190, 0.698);
 	border-radius: 6px;
 }
 
@@ -121,7 +122,7 @@ h5 {
 	padding-left: 0;
 	margin: 30px 0;
 	text-align: center;
-	background-color: orange;
+	background-color: purple;
 }
 
 .Menu li {
@@ -133,7 +134,7 @@ h5 {
 	display: inline-block;
 	margin: 0 10px;
 	padding: 10px;
-	color: white;
+	color: black;
 	text-decoration: none;
 	font-weight: bold;
 	outline: 0;
