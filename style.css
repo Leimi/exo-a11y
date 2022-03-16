@@ -4,7 +4,7 @@
 
 body {
 	margin: 0;
-	background: #f8ab8a;
+	background: #525252;
 	font-family: sans-serif;
 	font-size: 16px;
 }
@@ -59,11 +59,12 @@ h5 {
 }
 
 .Site {
+	color: white;
 	margin: auto;
 	max-width: 900px;
-	background: white;
-	box-shadow: 0 10px 10px #be5d17;
-	border: 3px solid orange;
+	background: rgb(46, 40, 40);
+	box-shadow: 0 10px 10px #3b3937;
+	border: 3px solid rgb(141, 141, 141);
 	border-top: 0;
 	border-bottom: 0;
 	padding: 15px;
@@ -121,7 +122,8 @@ h5 {
 	padding-left: 0;
 	margin: 30px 0;
 	text-align: center;
-	background-color: orange;
+	background-color: rgb(0, 255, 191);
+	color: black;
 }
 
 .Menu li {
@@ -133,10 +135,11 @@ h5 {
 	display: inline-block;
 	margin: 0 10px;
 	padding: 10px;
-	color: white;
 	text-decoration: none;
 	font-weight: bold;
 	outline: 0;
+	color: black;
+
 }
 
 .Menu a:hover {
@@ -150,6 +153,10 @@ h5 {
 
 .Distribution-photos {
 	order: 1;
+}
+
+.Distribution-photos td {
+	color: white;
 }
 
 @media (min-width: 700px) {
@@ -172,12 +179,17 @@ h5 {
 
 .Distinctions th,
 .Distinctions td {
+	color: white;
 	padding: 5px;
 	border: 1px solid #bbb;
 }
 
 .Distinctions-won {
-	background: green;
+	background: rgb(0, 255, 191);
+}
+
+.Distinctions-won td {
+	color: black !important;
 }
 
 .GoldenBook-form {
