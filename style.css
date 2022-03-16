@@ -173,11 +173,11 @@ h5 {
 .Distinctions th,
 .Distinctions td {
 	padding: 5px;
-	border: 1px solid #bbb;
+	border: 1px solid #fff;
 }
 
 .Distinctions-won {
-	background: green;
+	background: rgb(157, 218, 157);
 }
 
 .GoldenBook-form {
