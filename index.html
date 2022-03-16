@@ -1,12 +1,14 @@
-<html lang="es">
+<!DOCTYPE html>
+<html lang="fr">
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="modal.css">
 </head>
 <body>
 
-	<div
+	<header
 		class="modal--fade CookiesModal"
 		id="modal"
 		aria-hidden="true"
@@ -16,7 +18,7 @@
 			<div class="modal-content">
 				<p>Je vous jure, on a vraiment pas de cookies.</p>
 				<p>Mais cette boîte de dialogue est là pour vous aider à les gérer quand même.</p>
-				<div align="center">
+				<div style="align-items: center;">
 					<a href="#!" class="CookiesModal-button Button">Accepter les cookies</a>
 					<a href="#!" class="CookiesModal-button Button">Refuser les cookies</a>
 				</div>
@@ -32,7 +34,7 @@
 		>
 			?
 		</a>
-	</div>
+	</header>
 
 	<div class="Site">
 
@@ -66,27 +68,27 @@
 				</button>
 			</form>
 		</div>
+		<nav>
+			<ul class="Menu">
+				<li>
+					<a href="#intro">Introduction</a>
+				</li>
+				<li>
+					<a href="#synopsis">Synopsis</a>
+				</li>
+				<li>
+					<a href="#distribution">Distribution</a>
+				</li>
+				<li>
+					<a href="#distinctions">Distinctions</a>
+				</li>
+				<li>
+					<a href="#livredor">Livre d'or</a>
+				</li>
+			</ul>
+		</nav>
 
-		<ul class="Menu">
-			<li>
-				<a href="#intro">Introduction</a>
-			</li>
-			<li>
-				<a href="#synopsis">Synopsis</a>
-			</li>
-			<li>
-				<a href="#distribution">Distribution</a>
-			</li>
-			<li>
-				<a href="#distinctions">Distinctions</a>
-			</li>
-			<li>
-				<a href="#livredor">Livre d'or</a>
-			</li>
-		</ul>
-
-
-		<div id="contenu">
+		<main id="contenu">
 			<h3 id="intro">Introduction</h3>
 
 			<p>OSS 117 : Le Caire, nid d'espions est une comédie d'espionnage française réalisé par Michel Hazanavicius,
@@ -107,15 +109,13 @@
 			<div class="Distribution">
 				<div class="Distribution-photos">
 					<h4>Contenu annexe</h4>
-					<table cellspacing="0" align="center">
+					<table cellspacing="0" style="align-items: center;">
 						<tr>
 							<td>
-								<a
-									image-href="https://commons.wikimedia.org/wiki/File:Jean_Dujardin_Alexandra_Lamy.jpg?uselang=fr">
+								<a href="https://commons.wikimedia.org/wiki/File:Jean_Dujardin_Alexandra_Lamy.jpg?uselang=fr">
 									<img alt="" src="images/jdal.jpg" width="140" height="124">
 								</a>
-								<a
-									image-href="https://commons.wikimedia.org/wiki/File:Berenice_Bejo_Cannes_2011.jpg?uselang=fr">
+								<a href="https://commons.wikimedia.org/wiki/File:Berenice_Bejo_Cannes_2011.jpg?uselang=fr">
 									<img alt="" src="images/bb.jpg" width="140" height="198">
 								</a>
 								<div>Le comédien Jean Dujardin et la comédienne Bérénice Bejo</div>
@@ -271,7 +271,7 @@
 				<h3>Retours sur la boîte de dialogue de gestion de cookies</h3>
 				<p>En vous basant sur le <a href="https://www.w3.org/TR/wai-aria-practices-1.1/#dialog_modal">design pattern ARIA "Dialog (Modal")</a>, notez ici les problèmes d'accessibilité relevés sur la boîte de dialogue de cookies.</p>
 			</div>
-		</div>
+		</main>
 
 		<footer class="Footer">
 			<div class="Footer-columns">

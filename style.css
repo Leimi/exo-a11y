@@ -139,7 +139,8 @@ h5 {
 	outline: 0;
 }
 
-.Menu a:hover {
+.Menu a:hover,
+.Menu a:focus {
 	text-decoration: underline;
 }
 
