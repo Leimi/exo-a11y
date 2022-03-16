@@ -34,46 +34,50 @@
 
 	<div class="Site">
 
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<div class="container-fluid">
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-					data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-					aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse justify-content-center mx-4" id="navbarNavDropdown">
-					<ul class="navbar-nav">
-						<li class="nav-item mx-4">
-							<a class="nav-link" href="#recherche">Aller à la recherche</a>
-						</li>
-						<li class="nav-item mx-4">
-							<a class="nav-link" href="#contenu">Aller au contenu</a>
-						</li>
-						<li class="nav-item mx-4">
-							<a class="nav-link" href="#pied">Aller au pied de page</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
 
-		<header class="Header">
-			<h3 class="Header-title">
-				<a href="index.html">
+
+		<header class="Header d-flex flex-wrap">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<div class="container-fluid">
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+						data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+						aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse justify-content-center mx-4" id="navbarNavDropdown">
+						<ul class="navbar-nav">
+							<li class="nav-item col-3 mx-1">
+								<a class="nav-link" href="#recherche">Aller à la recherche</a>
+							</li>
+							<li class="nav-item col-3 mx-1">
+								<a class="nav-link" href="#contenu">Aller au contenu</a>
+							</li>
+							<li class="nav-item col-3 mx-1">
+								<a class="nav-link" href="#pied">Aller au pied de page</a>
+							</li>
+							<li class="nav-item col-3 mx-1">
+								<form action="#" class="Search">
+									<input type="text" placeholder="Rechercher">
+									<button>
+										<svg viewBox="0 0 490 490" width="16" height="16">
+											<path fill="none" stroke="#000" stroke-width="36" stroke-linecap="round"
+												d="m280,278a153,153 0 1,0-2,2l170,170m-91-117 110,110-26,26-110-110" />
+										</svg>
+									</button>
+								</form>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<h3 class="Header-title col-12 d-flex justify-content-around">
+				<a class="" href="index.html">
 					<img alt="" src="images/oss117.png" width="300" class="Header-logo">
+				</a>
+				<a class="" href="index.html">
 					<img alt="Accueil - OSS 117" src="images/oss117.png" width="300" class="Header-logo">
 				</a>
 			</h3>
-
-			<form action="#" class="Search">
-				<input type="text" placeholder="Rechercher">
-				<button>
-					<svg viewBox="0 0 490 490" width="16" height="16">
-						<path fill="none" stroke="#000" stroke-width="36" stroke-linecap="round"
-							d="m280,278a153,153 0 1,0-2,2l170,170m-91-117 110,110-26,26-110-110" />
-					</svg>
-				</button>
-			</form>
 		</header>
 
 		<nav>
