@@ -107,14 +107,27 @@ h5 {
 .Search {
 	display: flex;
 	align-items: stretch;
+	padding: 0.5rem 1rem;
+	border-radius: 10px;
+	box-shadow: 5px 5px 10px gray;
 }
 
 .Search input {
 	margin-right: 5px;
+	padding: 0.5rem;
+	border: none
 }
 
-.Search button:focus {
-	outline: 0;
+.Search button{
+	border: none;
+	background-color: #f8ab8a;
+	cursor: pointer;
+	width: 35px;
+	height: 35px;
+	border-radius: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .Menu {
