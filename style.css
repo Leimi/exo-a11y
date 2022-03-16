@@ -4,7 +4,7 @@
 
 body {
 	margin: 0;
-	background: #f8ab8a;
+	background: black;
 	font-family: sans-serif;
 	font-size: 16px;
 }
@@ -50,7 +50,7 @@ h5 {
 }
 
 .Button {
-	background: orange;
+	background: red;
 	color: white;
 	text-decoration: none;
 	display: inline-block;
@@ -63,7 +63,7 @@ h5 {
 	max-width: 900px;
 	background: white;
 	box-shadow: 0 10px 10px #be5d17;
-	border: 3px solid orange;
+	border: 3px solid red;
 	border-top: 0;
 	border-bottom: 0;
 	padding: 15px;
@@ -121,7 +121,7 @@ h5 {
 	padding-left: 0;
 	margin: 30px 0;
 	text-align: center;
-	background-color: orange;
+	background-color: red;
 }
 
 .Menu li {
