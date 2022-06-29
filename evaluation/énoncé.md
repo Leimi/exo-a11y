@@ -4,13 +4,11 @@
 
 Cloner le dépôt git@github.com:Leimi/exo-a11y.git (url github : https://github.com/Leimi/exo-a11y) dans un nouveau dossier.
 
-Puller la branche `corrections-a11y` et la nettoyer afin qu'elle soit prête à être mergée sur master. Cela veut dire :
-	- faire attention qu'elle va être bien mergeable sans conflit. Lors de la correction, je dois pouvoir faire, sur master, un `git merge corrections-a11y` sans générer de conflit.
-	- analyser les commits actuels de la branche et les modifier afin que le tout soit compréhensible, maintenable, sans commit superflu.
+Puller la branche `rattrapages` et la nettoyer afin qu'elle soit prête à être mergée sur master. Cela veut dire, analyser les commits actuels de la branche et les modifier afin que le tout soit compréhensible, maintenable, sans commit superflu, via notamment un rebase interactif (`git rebase -i master`).
 
 ### 1. Rendu attendu
 
-À la fin de l'évaluation, créez un fichier .zip de votre dossier "exo-a11y" entier : fichiers html, css, etc. et SURTOUT le dossier `.git`, qui contient votre dépôt git. Envoyez-le moi en privé sur Discord.
+À la fin de l'évaluation, créez un fichier .zip de votre dossier "exo-a11y" entier : fichiers html, css, etc. et SURTOUT le dossier `.git`, qui contient votre dépôt git. Envoyez-le en rendu du devoirs sur Teams.
 
 Faites bien ça tout à la fin de l'évaluation, afin que les autres exercices, à rendre dans des fichiers déjà créés dans le dépôt, soient rendus en meme temps.
 
@@ -20,28 +18,28 @@ Cloner le dépôt git@github.com:openfun/richie.git (url github : https://github
 
 A) Trouvez les réponses de chacun des points suivants, à chaque fois via l'usage **d'une unique commande git** :
 
-	- dans quel commit le fichier `src/richie/apps/courses/templates/courses/cms/blogpost_list.html` a été ajouté ?
-	- dans quel commit le fichier `src/richie/apps/courses/templates/courses/cms/fragment_course_glimpse.html` a été modifié pour la dernière fois pour une modification catégorisée "UI and style files" (voir https://gitmoji.dev/) ?
-	- depuis quel commit le fichier `src/frontend/js/types/Course.ts` a le type `state.priority` ?
-	- depuis quel commit la ligne 10 du fichier `src/frontend/js/data/useFilterValue/index.ts` appelle la fonction `useCourseSearchParams()` ?
+	- dans quel commit le fichier `src/richie/apps/courses/templates/courses/cms/category_detail.html` a été ajouté ?
+	- dans quel commit le fichier `src/richie/apps/courses/templates/courses/cms/fragment_blogpost_glimpse.html` a été modifié pour la dernière fois pour une modification catégorisée "Refactor code" (voir https://gitmoji.dev/) ?
+	- dans le fichier `src/frontend/js/types/Course.ts`, depuis quel commit la propriété `cover_image` est-elle un objet ?
+	- dans le fichier `src/frontend/js/data/useCourseSearchParams/index.ts`, depuis quel commit la variable `courseSearchParams` déclarée ligne 101 vaut `historyEntry.state.data.params` ?
 
-B) Trouvez les réponses de chacun des autres points suivants. Ici il est admis d'enchainer plusieurs commandes :
+B) Trouvez les réponses de chacun des autres points suivants. Ici il est admis d'enchainer plusieurs commandes si besoin :
 
-	- combien de commits de `jbpenrath` sont sur `master` ? 
-	- combien de commits concernant des mises à jour de dépendances sont sur `master` ?
+	- combien de commits de `Mehdi Benadda` sont sur `master` ? 
+	- combien de commits concernant des ajouts de nouvelles fonctionnalités (voir https://gitmoji.dev/ "introduce new features") sont sur `master` ?
 
 ### 2. Rendu attendu
 
 Pour chaque point, il est demandé :
 
-- la réponse voulue (un identifiant sha1 de commit / un nombre de commits)
+- la réponse voulue (un identifiant sha1 de commit pour les questions A) / un nombre de commits pour les questions B))
 - la ou les commandes utilisées pour trouver cette réponse. Attention je répète : pour la partie A), il faut trouver la réponse avec une seule commande git à chaque fois.
 
 Remplissez ça dans le fichier `evaluation/questions-git.md` déjà présent dans le dépôt.
 
 ## 3. Recherche de projet open-source
 
-Mise en situation : vous avez un projet web avec du JS "vanilla", autrement dit, sans aucun framework particulier déjà installé. Vous voulez ajouter des boîtes de dialogues (aussi appelées "modals" ou "dialogs") dans votre projet. Vous voulez utiliser un projet open-source car vous n'avez pas le temps d'implémenter ça vous-même de zéro. Vous voulez notamment que ces boîtes de dialogues soient accessibles, et vous voulez pouvoir facilement modifier leur visuel.
+Mise en situation : vous avez un projet web avec du JS "vanilla", autrement dit, sans aucun framework particulier déjà installé. Vous voulez ajouter un carousel dans votre projet (aussi appelé slider, slideshow, etc.). Vous voulez utiliser un projet open-source car vous n'avez pas le temps d'implémenter ça vous-même de zéro. Vous voulez notamment que ce carousel soit accessible, et vous voulez pouvoir facilement modifier son visuel.
 
 Exercice : trouvez le projet open-source sur GitHub qui va le mieux correspondre à ce besoin selon vous.
 

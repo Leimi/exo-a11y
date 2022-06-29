@@ -1,4 +1,4 @@
-Mise en situation : vous avez un projet web avec du JS "vanilla", autrement dit, sans aucun framework particulier déjà installé. Vous voulez ajouter des boîtes de dialogues (aussi appelées "modals" ou "dialogs") dans votre projet. Vous voulez utiliser un projet open-source car vous n'avez pas le temps d'implémenter ça vous-même de zéro. Vous voulez notamment que ces boîtes de dialogues soient accessibles, et vous voulez pouvoir facilement modifier leur visuel.
+Mise en situation : vous avez un projet web avec du JS "vanilla", autrement dit, sans aucun framework particulier déjà installé. Vous voulez ajouter un carousel dans votre projet (aussi appelé slider, slideshow, etc.). Vous voulez utiliser un projet open-source car vous n'avez pas le temps d'implémenter ça vous-même de zéro. Vous voulez notamment que ce carousel soit accessible, et vous voulez pouvoir facilement modifier son visuel.
 
 Exercice : trouvez le projet open-source sur GitHub qui va le mieux correspondre à ce besoin selon vous.
 
